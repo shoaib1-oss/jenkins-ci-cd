@@ -45,3 +45,4 @@ now goto jenkins security group and edit inbound add customtcp 8080 sonar-sg)sav
 at sonar website if test is failed beacuse of (60) we need to replace it with (100)
 for nexus repository goto repository creat it maven 2 hosted name vprofile-repo now goto jenkins at jenkins goto credentials 
 click on jenkins ,global crdentials,add credentials,username password will be admin)id and describtion will be nexuslogin)
+now for paac_ sonar_nexus we need to do changes in ip adress use private ip address in the code after that goto manage jenkins at sonarqube installation change public to private ip,and in sonarway website webhooks goto projectsettings create webhook name jenkinsvprofile)(http://private ip of jenkins/8080/sonarqube-webhook) at settings symbol change jenkis public to private ip)now build the job
