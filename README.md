@@ -39,3 +39,7 @@ now build a pipeline use create job pipeline  use pipelinescript
 while making pipeline job we should see manage jenkins it should be install jdk8 with proper java_home after then only build the job
 now goto manage jenkins you will see (sonarqube scanner name sonar4.7(install maven central same as name)
 now at manage jenkins you will see system after goto sonarqube server put a checkmark at environmental vairiable)now at (sonarqube installaitions name sonar ,server url use(http://public ip)now for tokens goto sonarserver website at my account,security you will see generating tokens use name jenkins and copy token and paste in jenkins there will be secret text paste there )and apply now
+for quality gate goto sonar website and there you will see quality gates create name (vprofile-QG) add condition (on overall code)quality gates fails when cognitive complexity (bugs)value(60) goto project and project setting quality gates select vprofile-qg
+now project settings goto webhooks create webhooks name (jenkins-ci-webhook)url(http://jenkins private ip:8080/sonarqube-webhook)click on create
+now goto jenkins security group and edit inbound add customtcp 8080 sonar-sg)save rule
+at sonar website if test is failed beacuse of (60) we need to replace it with (100)
