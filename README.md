@@ -43,3 +43,5 @@ for quality gate goto sonar website and there you will see quality gates create 
 now project settings goto webhooks create webhooks name (jenkins-ci-webhook)url(http://jenkins private ip:8080/sonarqube-webhook)click on create
 now goto jenkins security group and edit inbound add customtcp 8080 sonar-sg)save rule
 at sonar website if test is failed beacuse of (60) we need to replace it with (100)
+for nexus repository goto repository creat it maven 2 hosted name vprofile-repo now goto jenkins at jenkins goto credentials 
+click on jenkins ,global crdentials,add credentials,username password will be admin)id and describtion will be nexuslogin)
