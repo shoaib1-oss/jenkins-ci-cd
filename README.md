@@ -37,3 +37,5 @@ for sonar just copy public ip and paste it on web username and password will be 
 now goto manage jenkins u will see plugins use nexus artifact uploader,sonarqube sccanner,buildtime stamp, pipeline maven integration,pipeline utility steps,install all these)
 now build a pipeline use create job pipeline  use pipelinescript
 while making pipeline job we should see manage jenkins it should be install jdk8 with proper java_home after then only build the job
+now goto manage jenkins you will see (sonarqube scanner name sonar4.7(install maven central same as name)
+now at manage jenkins you will see system after goto sonarqube server put a checkmark at environmental vairiable)now at (sonarqube installaitions name sonar ,server url use(http://public ip)now for tokens goto sonarserver website at my account,security you will see generating tokens use name jenkins and copy token and paste in jenkins there will be secret text paste there )and apply now
