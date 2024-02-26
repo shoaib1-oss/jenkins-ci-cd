@@ -32,3 +32,7 @@ there should be a pom.xml file for artifact to build a job
 for artifact versioning we use at post  build action   step use **/*.war(for versioning use executable shell (mkdir -p versions cp target/vprofile-v2.war versions/vprofile-V$BUILD_ID.war)
 for nexus use centos ami, t2 medium, create new key pair (ssh anywhere,custom tcp port 8081 anywhere here again custom tcp at port 8081 at source we need to give jenkins security group) now at user detail paste the nexus.setup script and launch instance
 for sonarqube use ubuntu ami t2 medium  create new key pair (ssh anywhere,custam tcp port 80 anywhere,again custom tcp port 80 custom source same jenkins security group )discription (allow jenkins to connect sonarqube) at user data paste the setup of sonar 
+nexus now copy public ip with port 8081 and paste on web browser after that at sign in it will ask user name and password use ssh in gitbash use cat command to get password
+for sonar just copy public ip and paste it on web username and password will be (admin)
+now goto manage jenkins u will see plugins use nexus artifact uploader,sonarqube sccanner,buildtime stamp, pipeline maven integration,pipeline utility steps,install all these)
+now build a pipeline use create job pipeline  use pipelinescript
