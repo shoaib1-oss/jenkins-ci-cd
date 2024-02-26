@@ -36,3 +36,4 @@ nexus now copy public ip with port 8081 and paste on web browser after that at s
 for sonar just copy public ip and paste it on web username and password will be (admin)
 now goto manage jenkins u will see plugins use nexus artifact uploader,sonarqube sccanner,buildtime stamp, pipeline maven integration,pipeline utility steps,install all these)
 now build a pipeline use create job pipeline  use pipelinescript
+while making pipeline job we should see manage jenkins it should be install jdk8 with proper java_home after then only build the job
