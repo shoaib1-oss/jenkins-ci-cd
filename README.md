@@ -29,4 +29,4 @@ while building new job select source code management select git and paste the ur
 now at build step select invoke top levelmaven target Maven Version(maven) goals(clean install)
 now build the artifact after building the artifact now goto workspace you will see all the file from github artifacts
 there should be a pom.xml file for artifact to build a job
-
+for artifact versioning we use at post  build action   step use **/*.war(for versioning use executable shell (mkdir -p versions cp target/vprofile-v2.war versions/vprofile-v$BUILD_ID.war)
