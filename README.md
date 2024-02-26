@@ -16,10 +16,10 @@ sudo apt-get update
 sudo apt-get install jenkins -y
 ###
 this cloud install jenkins
-after that we get admin password from jenkins unlock the password use gitbash using commant (cat)
+after that we get admin password from jenkins unlock the password use gitbash using command (cat)
 install selected plugins,after installing all plugins admin and user password and email
 after that we need to go manage jenkins ,tools,install jdk now goto gitbash paste the command (ls /usr/lib/jvm)
-copy[java_home (/usr/lib/jvm/java-11-openjdk-amd64)]paste this path [name(Orcalejdk11)]
+copy and paste at [java_home (/usr/lib/jvm/java-11-openjdk-amd64)]paste this path at [name (Orcalejdk11)]
 apt install openjdk-8-jdk -y this will install oraclejdk8 
 now goto maven it will install automatically select latest install
 now build a freestyle job
@@ -30,4 +30,4 @@ now at build step select invoke top levelmaven target Maven Version(maven) goals
 now build the artifact after building the artifact now goto workspace you will see all the file from github artifacts
 there should be a pom.xml file for artifact to build a job
 for artifact versioning we use at post  build action   step use **/*.war(for versioning use executable shell (mkdir -p versions cp target/vprofile-v2.war versions/vprofile-V$BUILD_ID.war)
-for nexus use centos ami (ssh anywhere,custom tcp port 8081 anywhere here again custom tcp at port 8081 at source we need to give jenkins security group) now at user detail paste the nexus.setup script and launch instance
+for nexus use centos ami, t2 medium, create new key pair (ssh anywhere,custom tcp port 8081 anywhere here again custom tcp at port 8081 at source we need to give jenkins security group) now at user detail paste the nexus.setup script and launch instance
