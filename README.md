@@ -28,4 +28,5 @@ now for artifacts from github we need to go github account and copy https url an
 while building new job select source code management select git and paste the url here now at branch specifier select your branch while it is main or master branch
 now at build step select invoke top levelmaven target Maven Version(maven) goals(clean install)
 now build the artifact after building the artifact now goto workspace you will see all the file from github artifacts
+there should be a pom.xml file for artifact to build a job
 
