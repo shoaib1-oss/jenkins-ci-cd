@@ -30,3 +30,4 @@ now at build step select invoke top levelmaven target Maven Version(maven) goals
 now build the artifact after building the artifact now goto workspace you will see all the file from github artifacts
 there should be a pom.xml file for artifact to build a job
 for artifact versioning we use at post  build action   step use **/*.war(for versioning use executable shell (mkdir -p versions cp target/vprofile-v2.war versions/vprofile-V$BUILD_ID.war)
+for nexus use centos ami (ssh anywhere,custom tcp port 8081 anywhere here again custom tcp at port 8081 at source we need to give jenkins security group) now at user detail paste the nexus.setup script and launch instance
