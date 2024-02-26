@@ -24,4 +24,8 @@ apt install openjdk-8-jdk -y this will install oraclejdk8
 now goto maven it will install automatically select latest install
 now build a freestyle job
 at last build step select executable shell command write (id,whoami,pwd) and apply and build a job
+now for artifacts from github we need to go github account and copy https url and paste at new fristly we need to build a new job for it
+while building new job select source code management select git and paste the url here now at branch specifier select your branch while it is main or master branch
+now at build step select invoke top levelmaven target Maven Version(maven) goals(clean install)
+now build the artifact after building the artifact now goto workspace you will see all the file from github artifacts
 
